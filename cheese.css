@@ -1,0 +1,117 @@
+/* Repo: https://github.com/coswald04/cheese-touch */
+
+@import url("variables.css");
+
+*{
+    margin: 1;
+    box-sizing: border-box;
+}
+
+h1 {
+  font-size: 3rem;
+  color: var(--main-color);
+}
+
+h2 {
+  font-size: 2rem;
+  color: var(--main-color);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+header,
+body > footer {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+body {
+  font-family: var(--main-font);
+  color: var(--main-color);
+  line-height: 1.6;
+  background-color: var(--page-background);
+}
+
+main {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: var(--page-background);
+}
+
+blockquote{
+    padding: 1rem;
+}
+
+span[lang] {
+    font-family: monospace;
+}
+
+[type="text"]{
+    border: 0.1rem solid var(--accent-color);
+    padding: 0.5rem;
+}
+
+.latin-term {
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+#warning{
+    color: darkred;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: var(--main-color);
+}
+
+article > p {
+    margin-bottom: 1rem;
+}
+
+dt + dd {
+    margin-bottom: 1rem;
+    padding-left: 1rem;;
+}
+
+a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+button:focus {
+  outline: 0.2rem solid var(--accent-color);
+}
+
+fieldset {
+  border: 0.1rem solid var(--main-color);
+  padding: 1em;
+}
+
+legend {
+  font-weight: bold;
+}
+
+input:checked + label {
+  color: var(--accent-color);
+  font-weight: bold;
+}
+button {
+  font-family: var(--main-font);
+  color: var(--main-color);
+  background-color: var(--soft-background);
+  border: 0.1rem solid var(--main-color);
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
