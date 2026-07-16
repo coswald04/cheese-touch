@@ -8,14 +8,24 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: var(--main-font);
+  color: var(--text-color);
+  line-height: 1.6;
+  background-color: var(--page-background);
+}
+
+h1,
+h2 {
+  color: var(--main-color);
+}
+
 h1 {
   font-size: 3rem;
-  color: var(--main-color);
 }
 
 h2 {
   font-size: 2rem;
-  color: var(--main-color);
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
@@ -32,13 +42,6 @@ body > footer {
   text-align: left;
 }
 
-body {
-  font-family: var(--main-font);
-  color: var(--text-color);
-  line-height: 1.6;
-  background-color: var(--page-background);
-}
-
 main {
   max-width: var(--content-width);
   margin: 0 auto; 
@@ -51,7 +54,7 @@ blockquote{
 }
 
 span[lang] {
-  font-family: georgia;
+  font-style: italic
 }
 
 [type="text"]{
