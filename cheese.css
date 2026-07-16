@@ -20,6 +20,10 @@ h2 {
   margin-bottom: 1rem;
 }
 
+h2::before {
+  content:"🧀";
+}
+
 header,
 body > footer {
   max-width: var(--content-width);
@@ -30,7 +34,7 @@ body > footer {
 
 body {
   font-family: var(--main-font);
-  color: black;
+  color: var(--text-color);
   line-height: 1.6;
   background-color: var(--page-background);
 }
