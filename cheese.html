@@ -4,6 +4,12 @@
     <meta charset = "utf-8">
     <title> Cheese Touch </title>
     <link rel = "stylesheet" href = "cheese.css">
+
+    <style>
+    h1 {
+        background-color: rgb(254, 246, 212);
+    }
+    </style>
 </head>
 <body>
     <header>
@@ -13,10 +19,12 @@
 
     <main>
     <article>
+        <p>
         Cheese is one of humanity's oldest prepared foods. People have made it
         for at least 7,000 years, long before written history. At its core,
         cheese is simple: milk, salt, cultures, and rennet. Time and technique
         do the rest.
+        </p>
     </article>
 
     <h2> What is Cheese, Really? </h2>
@@ -57,18 +65,22 @@
         deep, nutty flavor.</dd>
     </dl>
 
+
     <h2> A Word of Caution </h2>
 
     <p id="warning">
     Warning:</p><p>The American product known as "processed cheese food" is,
     at best, distantly related to cheese. Read the label.</p>
     
+    <br>
 
     <blockquote>
-    <p>
-    As the writer Clifton Fadiman put it, <q>cheese is milk's leap toward immortality. </q> 
-    </p>
+        <p>
+            <q> cheese is milk's leap toward immortality. </q>
+        </p>
+        <footer> As the writer Clifton Fadiman put it. </footer>
     </blockquote>
+
 
     <h2> Try It Yourself </h2>
 
@@ -77,37 +89,37 @@
             <legend> Which of these have you tasted? </legend>
 
             <p>
-                <label>
-                    <input type = "radio" name="cheese-group" value="brie">
-                    Brie
-                </label>
+                <input type="radio" id="brie" name="cheese-group" value="brie">
+                <label for="brie"> Brie </label>
             </p>
 
             <p>
-                <label>
-                    <input type = "radio" name="cheese-group" value="Roquefort">
-                    Roquefort
-                </label>
+                <input type="radio" id="roquefort" name="cheese-group" value="roquefort">
+                <label for="roquefort"> Roquefort </label>
             </p>
 
             <p>
-                <label>
-                    <input type = "radio" name="cheese-group" value="Aged Gouda">
-                    Aged Gouda
-                </label>
+                <input type="radio" id="aged-gouda" name="cheese-group" value="aged-gouda">
+                <label for="aged-gouda"> Aged Gouda </label>
             </p>
 
-            <button type="submit">Submit</button>
+            <br>
+
+            <p>
+                <label for="favorite-cheese">
+                    Tell us your favorite cheese and we will add it to the guide:
+                </label>
+                <input type="text" id="favorite-cheese" name="favorite-cheese">
+            </p>
+
+            <button type="submit"> Submit </button>
         </fieldset>
     </form>
 
-    <br>
-
-    <p> Tell us your favorite cheese and we will add it to the guide. </p>
+    </main>
 
     <footer>
         <p> <em> &copy; 2026 The CSE Cheese Society. Cheese responsibly.</em> </p>
     </footer>
-</main>
 </body>
 </html>

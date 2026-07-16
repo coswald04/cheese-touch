@@ -1,10 +1,11 @@
 /* Repo: https://github.com/coswald04/cheese-touch */
 
+/* In production, <link> is usually preferred because @import can delay loading extra CSS files. */
 @import url("variables.css");
 
 *{
-    margin: 1;
-    box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -24,38 +25,38 @@ body > footer {
   max-width: var(--content-width);
   margin: 0 auto;
   padding: 1rem;
-  text-align: center;
+  text-align: left;
 }
 
 body {
   font-family: var(--main-font);
-  color: var(--main-color);
+  color: black;
   line-height: 1.6;
   background-color: var(--page-background);
 }
 
 main {
   max-width: var(--content-width);
-  margin: 0 auto;
-  padding: 2rem;
+  margin: 0 auto; 
   background-color: var(--page-background);
 }
 
 blockquote{
-    padding: 1rem;
+  padding: 2rem;
+  border-left: 10px solid var(--accent-color);
 }
 
 span[lang] {
-    font-family: monospace;
+  font-family: georgia;
 }
 
 [type="text"]{
-    border: 0.1rem solid var(--accent-color);
-    padding: 0.5rem;
+  border: 0.1rem solid var(--accent-color);
+  padding: 0.5rem;
 }
 
 .latin-term {
-  color: var(--accent-color);
+  color: var(--main-color);
   font-weight: bold;
 }
 
@@ -71,6 +72,10 @@ header p {
 
 article > p {
     margin-bottom: 1rem;
+}
+
+dt {
+  font-weight: bold;
 }
 
 dt + dd {
@@ -92,6 +97,10 @@ a:focus,
 input:focus,
 button:focus {
   outline: 0.2rem solid var(--accent-color);
+}
+
+section {
+  padding: 0.5rem;
 }
 
 fieldset {
