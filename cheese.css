@@ -65,17 +65,16 @@ span[lang] {
 }
 
 #warning{
-    color: darkred;
-    font-weight: bold;
+  color: darkred;
+  font-weight: bold;
 }
 
 header p {
-    font-size: 1.2rem;
-    color: var(--main-color);
+  font-size: 1.2rem;
 }
 
 article > p {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 dt {
@@ -83,8 +82,8 @@ dt {
 }
 
 dt + dd {
-    margin-bottom: 1rem;
-    padding-left: 1rem;;
+  margin-bottom: 1rem;
+  padding-left: 1rem;;
 }
 
 a {
@@ -121,8 +120,6 @@ input:checked + label {
   font-weight: bold;
 }
 button {
-  font-family: var(--main-font);
-  color: var(--main-color);
   background-color: var(--soft-background);
   border: 0.1rem solid var(--main-color);
   padding: 0.5rem;
